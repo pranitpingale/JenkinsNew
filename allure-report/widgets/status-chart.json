@@ -1,0 +1,11 @@
+[ {
+  "uid" : "a160d8043231d8df",
+  "name" : "To verify if user can login to gmail",
+  "time" : {
+    "start" : 1549549600108,
+    "stop" : 1549549611349,
+    "duration" : 11241
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "A registered user can Login gmail and can access his account",
+    "children" : [ {
+      "name" : "To verify if user can login to gmail",
+      "uid" : "a160d8043231d8df",
+      "parentUid" : "f690915a6ff184d46072640b1babb44d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1549549600108,
+        "stop" : 1549549611349,
+        "duration" : 11241
+      },
+      "flaky" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "f690915a6ff184d46072640b1babb44d"
+  } ]
+}

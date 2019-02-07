@@ -1,0 +1,85 @@
+{
+  "uid" : "a160d8043231d8df",
+  "name" : "To verify if user can login to gmail",
+  "fullName" : "A registered user can Login gmail and can access his account.To verify if user can login to gmail",
+  "historyId" : "a95e8f3f4f1d247a95eb048e0c51d0a5",
+  "time" : {
+    "start" : 1549549600108,
+    "stop" : 1549549611349,
+    "duration" : 11241
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "user navigates to gmail login page",
+      "time" : {
+        "start" : 1549549600134,
+        "stop" : 1549549611344,
+        "duration" : 11210
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "A registered user can Login gmail and can access his account"
+  }, {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "A registered user can Login gmail and can access his account"
+  }, {
+    "name" : "testClass",
+    "value" : "A registered user can Login gmail and can access his account"
+  }, {
+    "name" : "testMethod",
+    "value" : "To verify if user can login to gmail"
+  }, {
+    "name" : "package",
+    "value" : "A registered user can Login gmail and can access his account"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a160d8043231d8df.json",
+  "parameterValues" : [ "chrome" ]
+}

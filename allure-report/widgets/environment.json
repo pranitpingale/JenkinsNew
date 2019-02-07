@@ -1,0 +1,10 @@
+[ {
+  "values" : [ "chrome" ],
+  "name" : "Browser(s)"
+}, {
+  "values" : [ "ALIPL5101" ],
+  "name" : "Host"
+}, {
+  "values" : [ "Windows 10" ],
+  "name" : "Operating System"
+} ]
