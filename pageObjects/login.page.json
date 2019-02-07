@@ -1,0 +1,20 @@
+{
+    "login": {
+      
+      "selector":{
+
+         "loginTextbox": "#UserName",
+         "passwordTextbox": "#Password",
+         "loginButton": "body > sl-root > div > div > div > sl-main > div > div > div > div > div > div.col-sm-7.white-bg > sl-login > form > button",
+         "noThanksButton": "button[data-form='noThanksForm']"
+        
+      },
+      
+      "testData": {
+        
+        "pageTitle": ""
+        
+      }
+      
+    }
+  }
