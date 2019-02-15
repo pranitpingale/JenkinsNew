@@ -1,4 +1,4 @@
-console.log("Running configuration file: wdio.conf.js");
+onsole.log("Running configuration file: wdio.conf.js");
 
 var notifier = require('node-notifier');
 var fileObj = require('./utilities/fileSystemFunctions.js');
@@ -9,10 +9,6 @@ var path = require('path');
 var json = require('json-file');
 var file = json.read('./utilities/testData.json');
 //const { Given, When, Then } = require('cucumber');
-// var leadership =  loginPage.loginTextbox
-// console.log(leadership)
-// loginPage.loginTextbox.setValue('ankita')
-
 
 exports.config = {
 
@@ -30,8 +26,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './features//**/*.feature'
-        // specs: ['./test/specs/**/*.spec.js'],
+        './features/**/*.feature'
         
     ],
     // Patterns to exclude.
@@ -54,7 +49,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 1,
+    maxInstances: 5,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -65,7 +60,7 @@ exports.config = {
             // maxInstances can get overwritten per capability. So if you have an in-house Selenium
             // grid with only 5 firefox instances available you can make sure that not more than
             // 5 instances get started at a time.
-            maxInstances: 1,
+            maxInstances: 5,
             //
             browserName:'chrome',
             acceptSslCerts: true,
@@ -120,8 +115,8 @@ exports.config = {
     //
     //
     //*************************************** QA URL *********************************************** //
-    baseUrl: 'http://www.webdriveruniversity.com/',
-    //
+    baseUrl: 'https://hsynlwsss201.amwaternp.net:8443/selfservice-web/login.do',
+    
     // Default timeout for all waitFor* commands.
     waitforTimeout: 120000,
     //
@@ -154,7 +149,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['selenium-standalone', 'firefox-profile'],
+    services: ['selenium-standalone', 'firefox-profile', 'iedriver'],
 
     firefoxProfile: {
         
@@ -221,14 +216,13 @@ exports.config = {
     onPrepare: function (config, capabilities) {
 
         notifier.notify({
-            title: 'Sample',
+            title: 'Amwater',
             message: 'Test run started'
         })
 
         fileObj.getBrowserMetaData(capabilities);
 
     },
-  
     /**
      * Gets executed just before initialising the webdriver session and test framework. It allows you
      * to manipulate configurations depending on the capability or spec.
@@ -271,8 +265,8 @@ exports.config = {
         expect = require('chai').expect;
 
         //User login QA
-       // loginId = file.get('testData.qa.loginData.Ankita.loginID')
-       // password = file.get('testData.qa.loginData.Ankita.password')
+        loginId = file.get('testData.qa.loginData.Alexander.loginID')
+        password = file.get('testData.qa.loginData.Alexander.password')
 
         //User login Dev
         // loginId = file.get('testData.dev.loginData.Richard.loginID')
@@ -295,9 +289,8 @@ exports.config = {
      * @param {Object} feature feature details
      */
     beforeFeature: function (feature) {
-       
+
         browser.windowHandleMaximize()
-        browser.url(this.baseUrl);
 
     },
     /**
@@ -392,7 +385,7 @@ exports.config = {
 
         notifier.notify({
 
-            title: 'Sample Test',
+            title: 'Amwater',
             message: 'Test run completed'
         })
 
