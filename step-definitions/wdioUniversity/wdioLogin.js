@@ -10,7 +10,7 @@ Given(/^user navigates to gmail login page$/, function () {
     
     browser.pause(3000)
     
-
-
+When(/^2 user navigates to gmail login page$/, function () {
+  })
     
   });
