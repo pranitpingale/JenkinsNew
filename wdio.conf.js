@@ -1,4 +1,4 @@
-onsole.log("Running configuration file: wdio.conf.js");
+console.log("Running configuration file: wdio.conf.js");
 
 var notifier = require('node-notifier');
 var fileObj = require('./utilities/fileSystemFunctions.js');
@@ -115,7 +115,7 @@ exports.config = {
     //
     //
     //*************************************** QA URL *********************************************** //
-    baseUrl: 'https://hsynlwsss201.amwaternp.net:8443/selfservice-web/login.do',
+    baseUrl: 'http://www.webdriveruniversity.com/',
     
     // Default timeout for all waitFor* commands.
     waitforTimeout: 120000,

@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1550246118580' stop='1550246124125'>
+    <name>A registered user can Login gmail and can access his account</name>
+    <title>A registered user can Login gmail and can access his account</title>
+    <test-cases>
+        <test-case start='1550246118601' status='broken' stop='1550246124124'>
+            <name>To verify if user can login to gmail</name>
+            <title>To verify if user can login to gmail</title>
+            <labels>
+                <label name='feature' value='A registered user can Login gmail and can access his account'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1550246118609' status='broken' stop='1550246124121'>
+                    <name>user navigates to gmail login page</name>
+                    <title>user navigates to gmail login page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1550246124121' status='broken' stop='1550246124121'>
+                    <name>2 user navigates to gmail login page</name>
+                    <title>2 user navigates to gmail login page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "2 user navigates to gmail login page" is not defined. You can ignore this error by setting
+                                              cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>undefined:undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
